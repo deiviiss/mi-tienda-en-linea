@@ -1,0 +1,7 @@
+export { ValuePropositionSection } from './ValuePrepositionSection'
+export { TemplateSection } from './TemplateSection'
+export { PricingSection } from './PricingSection'
+export { BenefitSection } from './BenefitSection'
+export { FeatureSection } from './FeatureSection'
+export { TestimonialSection } from './TestimonialSection'
+export { ContactForm } from './ContactForm'

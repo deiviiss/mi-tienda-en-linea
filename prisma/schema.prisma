@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  admin
+  user
+}
+
+model User {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  name          String
+  password      String?
+  emailVerified DateTime?
+  image         String?
+  phoneNumber   String
+  role          Role      @default(user)
+  isActive      Boolean   @default(true)
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+
+  @@map("users")
+}
+
+model Template {
+  id             String          @id @default(uuid())
+  title          String
+  description    String
+  features       String[]
+  plan           String
+  category       String
+  templateSlides TemplateSlide[]
+  videoUrl       String?
+  url            String?
+
+  @@map("templates")
+}
+
+model TemplateSlide {
+  id         String   @id @default(uuid())
+  url        String
+  templateId String
+  template   Template @relation(fields: [templateId], references: [id], onDelete: Cascade)
+
+  @@map("template_slides")
+}
