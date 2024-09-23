@@ -95,7 +95,7 @@ export const SectionContentPrivacy = () => {
                   <section>
                     <h2 className="text-2xl font-bold mb-4 text-white">2. Datos de Terceros (Clientes de Tiendas)</h2>
                     <p className="text-gray-200">
-                      MiTiendaEnLinea.app actúa como procesador de los datos de los clientes de las tiendas gestionadas por los usuarios. Estos datos son utilizados únicamente para la gestión de pedidos y no serán compartidos con terceros, salvo que sea necesario para cumplir con el servicio (e.g. pasarelas de pago como PayPal). Los usuarios son responsables de cumplir con las leyes locales de protección de datos respecto a sus clientes.
+                      Mi Tienda en Línea actúa como procesador de los datos de los clientes de las tiendas gestionadas por los usuarios. Estos datos son utilizados únicamente para la gestión de pedidos y no serán compartidos con terceros, salvo que sea necesario para cumplir con el servicio (e.g. pasarelas de pago como PayPal). Los usuarios son responsables de cumplir con las leyes locales de protección de datos respecto a sus clientes.
                     </p>
                   </section>
                 )}

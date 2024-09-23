@@ -112,7 +112,7 @@ export const initialData: SeedData = {
 
   users: [
     {
-      email: 'mitiendaenlinea.app@hotmail.com',
+      email: 'mitiendaenlinea.shop@hotmail.com',
       name: 'Mi tienda en línea',
       password: bcrypt.hashSync('userseed'),
       role: 'admin',
