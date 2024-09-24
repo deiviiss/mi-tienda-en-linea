@@ -28,27 +28,26 @@ interface SeedData {
 export const initialData: SeedData = {
 
   templates: [
-    {
-      id: '1',
-      title: 'Only-Cart',
-      description: 'Ideal para tiendas pequeñas que buscan un enfoque simple y efectivo. Con un carrito de compras intuitivo y un catálogo de productos fácil de gestionar, este template es perfecto para iniciar ventas en línea rápidamente.',
-      features: [
-        'Interfaz minimalista enfocada en la funcionalidad',
-        'Carrito de compras con actualización rápida de productos',
-        'Gestión de hasta 100 productos con opciones básicas de personalización',
-        'Notificaciones de pedidos y ventas en tiempo real',
-        'Soporte técnico básico por correo electrónico',
-        'Panel simple de gestión de pedidos y productos',
-        'Acompañamiento inicial para configuración',
-        'Sin registro de clientes, ideal para ventas directas'
-      ],
-      plan: 'Basic',
-      category: 'Basic',
-      slidesImages: null,
-      videoUrl: null,
-      url: null
-    },
-
+    // {
+    //   id: '1',
+    //   title: 'Only-Cart',
+    //   description: 'Ideal para tiendas pequeñas que buscan un enfoque simple y efectivo. Con un carrito de compras intuitivo y un catálogo de productos fácil de gestionar, este template es perfecto para iniciar ventas en línea rápidamente.',
+    //   features: [
+    //     'Interfaz minimalista enfocada en la funcionalidad',
+    //     'Carrito de compras con actualización rápida de productos',
+    //     'Gestión de hasta 100 productos con opciones básicas de personalización',
+    //     'Notificaciones de pedidos y ventas en tiempo real',
+    //     'Soporte técnico básico por correo electrónico',
+    //     'Panel simple de gestión de pedidos y productos',
+    //     'Acompañamiento inicial para configuración',
+    //     'Sin registro de clientes, ideal para ventas directas'
+    //   ],
+    //   plan: 'Basic',
+    //   category: 'Basic',
+    //   slidesImages: null,
+    //   videoUrl: null,
+    //   url: null
+    // },
     {
       id: '2',
       title: 'Moda Shop',
@@ -68,14 +67,38 @@ export const initialData: SeedData = {
       slidesImages: [
         {
           id: '1',
-          url: '/imgs/moda.png?height=400&width=600'
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220023/mi-tienda-en-linea-shop/zsa3mut5xhzggrvf0lvc.png'
         },
         {
           id: '2',
-          url: '/imgs/moda.png?height=400&width=600'
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220024/mi-tienda-en-linea-shop/jkpvqnngypkx2zsbisiu.png'
+        },
+        {
+          id: '3',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220448/mi-tienda-en-linea-shop/cmmcjvlwlqgwtxr8mpyi.png'
+        },
+        {
+          id: '4',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220023/mi-tienda-en-linea-shop/jiu081dfx9cfihxzuxvh.png'
+        },
+        {
+          id: '5',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220023/mi-tienda-en-linea-shop/aux3dkgyjhmhobnlwha7.png'
+        },
+        {
+          id: '6',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220449/mi-tienda-en-linea-shop/ahe4r1moroem1fdxthfl.png'
+        },
+        {
+          id: '7',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220022/mi-tienda-en-linea-shop/jkxet6zvvlz6nlrtoj66.png'
+        },
+        {
+          id: '8',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220022/mi-tienda-en-linea-shop/s6b6bontm0bcmxapxj1k.png'
         }
       ],
-      videoUrl: 'https://example.com/video.mp4',
+      videoUrl: null,
       url: 'https://moda-shop.vercel.app'
     },
     {
@@ -97,14 +120,38 @@ export const initialData: SeedData = {
       slidesImages: [
         {
           id: '1',
-          url: '/imgs/bazar.png?height=400&width=600'
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/rf98xdgad3zez6yzztap.png'
         },
         {
           id: '2',
-          url: '/imgs/bazar.png?height=400&width=600'
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/vgndqbzpncp1a5w622rn.png'
+        },
+        {
+          id: '3',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/wclxdvdbwzjtiangsesc.png'
+        },
+        {
+          id: '4',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/gsyrjcfirtgrdojbyk3v.png'
+        },
+        {
+          id: '5',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/xaraofrx2hflozr1ix77.png'
+        },
+        {
+          id: '6',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727218165/mi-tienda-en-linea-shop/oblyneg0coiacehahg8k.png'
+        },
+        {
+          id: '7',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727218031/mi-tienda-en-linea-shop/zo2jiiu9hxhadhkfk5ja.png'
+        },
+        {
+          id: '8',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727218031/mi-tienda-en-linea-shop/lw652bsprmt47tvwkpnv.png'
         }
       ],
-      videoUrl: 'https://example.com/cafe-video.mp4',
+      videoUrl: null,
       url: 'https://bazarcampechano.com'
     }
 

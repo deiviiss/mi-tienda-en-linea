@@ -50,11 +50,11 @@ export const ImageCarrousel = ({
         >
           {slides.map((slide) => (
             <TemplateImage
-              className='w-full min-w-full h-[500px] object-cover'
+              className='w-full min-w-full h-[500px] object-cover object-left'
               key={slide.id}
               src={`${slide.url}`}
               alt={slide.url}
-              width={600}
+              width={880}
               height={500}
             />
           ))}
