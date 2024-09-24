@@ -32,7 +32,7 @@ export const ButtonScrollTop = ({ name, className, icon }: Props) => {
   }, [])
 
   return (
-    <>
+    <div className={`${isVisible ? 'fade-in' : 'opacity-0'}`}>
       {isVisible && (
         <Button
           variant='outline'
@@ -43,6 +43,6 @@ export const ButtonScrollTop = ({ name, className, icon }: Props) => {
           {name && <span>{name}</span>}
         </Button>
       )}
-    </>
+    </div>
   )
 }

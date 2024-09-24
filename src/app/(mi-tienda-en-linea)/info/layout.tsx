@@ -4,7 +4,7 @@ export default async function InfoLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className='mt-[60.67px] pt-10 px-1 '>
+    <div className='pt-[70.67px] px-1 '>
       {children}
     </div>
   )

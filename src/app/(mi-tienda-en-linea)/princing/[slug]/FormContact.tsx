@@ -41,7 +41,7 @@ export const FormContact = ({ selectedPlan, setSelectedPlan, pricingPlans }: IPr
   }
 
   return (
-    <div className="max-w-md mx-auto bg-gray-800 p-8 rounded-lg" id='contact'>
+    <div className="max-w-md mx-auto bg-gray-800 p-8 rounded-lg mt-10" id='contact'>
       <h2 className="text-2xl font-bold mb-6 text-center">Contáctanos</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
