@@ -5,19 +5,19 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
 const templates = [
-  {
-    id: '1',
-    image: '/imgs/placeholder.jpg',
-    title: 'only-cart',
-    category: 'Basic',
-    description: 'Template simple y efectivo para tiendas pequeñas.',
-    plan: 'Basic',
-    url: 'https://only-cart.vercel.app/',
-    slug: 'only-cart'
-  },
+  // {
+  //   id: '1',
+  //   image: '/imgs/placeholder.jpg',
+  //   title: 'only-cart',
+  //   category: 'Basic',
+  //   description: 'Template simple y efectivo para tiendas pequeñas.',
+  //   plan: 'Basic',
+  //   url: 'https://only-cart.vercel.app/',
+  //   slug: 'only-cart'
+  // },
   {
     id: '2',
-    image: '/imgs/moda.png',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220023/mi-tienda-en-linea-shop/zsa3mut5xhzggrvf0lvc.png',
     title: 'moda shop',
     category: 'MVP',
     description: 'Template con diseño elegante para tiendas de moda.',
@@ -27,7 +27,7 @@ const templates = [
   },
   {
     id: '3',
-    image: '/imgs/bazar.png',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/rf98xdgad3zez6yzztap.png',
     title: 'bazar campechano',
     category: 'MVP',
     description: 'Template versátil para tiendas de productos variados',

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { HeaderHero } from '@/components'
-import { BenefitSection, ContactForm, FeatureSection, PricingSection, TemplateSection, TestimonialSection, ValuePropositionSection } from '@/components/landing'
+import { BenefitSection, ContactForm, FeatureSection, PricingSection, TemplateSection, ValuePropositionSection } from '@/components/landing'
 import { Button } from '@/components/ui/button'
 
 export default function LandingPage() {
@@ -27,7 +27,7 @@ export default function LandingPage() {
         <FeatureSection />
 
         {/* Testimonials */}
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
 
         {/* CTA */}
         <section className="bg-blue-600 pb-20 pt-24 mb-20">
