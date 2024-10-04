@@ -12,7 +12,7 @@ interface Slide {
 
 export const ImageCarrousel = ({
   autoSlide = false,
-  autoSlideInterval = 4000,
+  autoSlideInterval = 8000,
   slides
 }: {
   autoSlide?: boolean
