@@ -30,6 +30,7 @@ export default function PlanBySlugPage({ params }: Props) {
         'Mantenimiento de pedidos',
         'Soporte básico',
         'Estadísticas básicas de ventas',
+        'Asistencia de marketing inicial',
         'Acompañamiento personalizado'
       ],
       slug: 'basic'
@@ -45,6 +46,7 @@ export default function PlanBySlugPage({ params }: Props) {
         'Páginas legales y de contacto',
         'Soporte prioritario',
         'Análisis avanzado de ventas',
+        'Asistencia de marketing inicial',
         'Acompañamiento personalizado'
       ],
       slug: 'standard'
@@ -60,6 +62,7 @@ export default function PlanBySlugPage({ params }: Props) {
         'Diseño exclusivo',
         'Dashboard avanzado',
         'Actualizaciones y mantenimiento continuo',
+        'Asistencia de marketing inicial',
         'Acompañamiento personalizado'
       ],
       slug: 'premium'
@@ -100,6 +103,7 @@ export default function PlanBySlugPage({ params }: Props) {
       items: [
         { name: 'Soporte básico', plans: [true, true, true] },
         { name: 'Soporte prioritario', plans: [false, true, true] },
+        { name: 'Asistencia de marketing inicial', plans: [true, true, true] },
         { name: 'Acompañamiento personalizado', plans: [true, true, true] }
       ]
     },
