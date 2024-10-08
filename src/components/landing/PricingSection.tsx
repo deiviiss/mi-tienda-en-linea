@@ -15,6 +15,7 @@ const pricingPlans = [
       'Mantenimiento de pedidos',
       'Soporte básico',
       'Estadísticas básicas de ventas',
+      'Asistencia de marketing inicial',
       'Acompañamiento personalizado'],
     slug: 'basic'
   },
@@ -29,6 +30,7 @@ const pricingPlans = [
       'Páginas legales y de contacto',
       'Soporte prioritario',
       'Análisis avanzado de ventas',
+      'Asistencia de marketing inicial',
       'Acompañamiento personalizado'
     ],
     slug: 'standard'
@@ -44,6 +46,7 @@ const pricingPlans = [
       'Diseño exclusivo',
       'Dashboard avanzado',
       'Actualizaciones y mantenimiento continuo',
+      'Asistencia de marketing inicial',
       'Acompañamiento personalizado'
     ],
     slug: 'premium'
