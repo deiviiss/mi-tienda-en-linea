@@ -1,7 +1,6 @@
 'use client'
 
 import { CheckCircle, XCircle } from 'lucide-react'
-import Link from 'next/link'
 import { useState, useRef, useEffect } from 'react'
 import { FormContact } from './FormContact'
 import { Button } from '@/components/ui/button'
@@ -163,7 +162,11 @@ export default function PlanBySlugPage({ params }: Props) {
             const isSelected = slug === selectedPlan
             return (
 
-              <Card key={index} className={`bg-gradient-to-br ${isSelected ? 'from-blue-600 to-blue-800' : 'from-gray-700 to-gray-900'} text-white overflow-hidden transition-all duration-300 hover:scale-105 shadow-xl`}>
+              <Card
+                key={index}
+                className={`bg-gradient-to-br ${isSelected ? 'from-blue-600 to-blue-800' : 'from-gray-700 to-gray-900'} text-white overflow-hidden transition-all duration-300 hover:scale-105 shadow-xl cursor-pointer`}
+                onClick={() => { setSelectedPlan(slug) }}
+              >
                 <CardHeader className="text-center p-6 relative">
                   {isSelected && (
                     <div className="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-bl-lg">
@@ -187,7 +190,7 @@ export default function PlanBySlugPage({ params }: Props) {
                   </ul>
                 </CardContent>
                 <CardFooter className="p-6">
-                  <Button onClick={() => { setSelectedPlan(slug) }} className={`w-full ${isSelected ? 'bg-yellow-400 hover:bg-yellow-500 text-gray-900' : 'bg-white hover:bg-gray-100 text-gray-900'} font-bold py-3 rounded-full transition-colors duration-300`}>
+                  <Button onClick={() => { setSelectedPlan(slug) }} className={`w-full ${isSelected ? 'bg-yellow-400 hover:bg-yellow-500 text-gray-900' : 'bg-white hover:bg-gray-100 text-gray-900'} font-bold py-3 rounded-full transition-colors duration-300  hover:scale-105`}>
                     {isSelected ? 'Seleccionado' : 'Seleccionar plan'}
                   </Button>
                 </CardFooter>
@@ -261,16 +264,14 @@ export default function PlanBySlugPage({ params }: Props) {
         <section className="bg-blue-600 pb-20 pt-24 mb-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">¿Listo para impulsar tu negocio?</h2>
-            <p className="text-xl mb-8">Completa el formulario a continuación y comienza tu viaje.</p>
-            <Button asChild className="bg-white text-blue-600 hover:bg-gray-100 rounded-full">
-              <Link href="#contact">Contáctanos</Link>
-            </Button>
+            <p>Completa el formulario a continuación y comienza tu viaje.</p>
           </div>
-        </section>
+        </section >
 
         {/* Contact Form */}
-        <FormContact pricingPlans={pricingPlansOptions} selectedPlan={selectedPlan || ''} setSelectedPlan={setSelectedPlan} />
-      </div>
+        < FormContact pricingPlans={pricingPlansOptions} selectedPlan={selectedPlan || ''
+        } setSelectedPlan={setSelectedPlan} />
+      </div >
     </>
   )
 }
