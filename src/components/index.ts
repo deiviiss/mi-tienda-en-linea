@@ -15,6 +15,7 @@ export { TitleCategory } from './ui/title-category/TitleCategory'
 export { Pagination } from './ui/pagination/Pagination'
 export { ButtonBack } from './ui/button-back/ButtonBack'
 export { ButtonScrollTop } from './ui/button-scroll-top/ButtonScrollTop'
+export { ButtonContactWhatsApp } from './ui/button-contact-whatsapp/ButtonContactWhatsApp'
 export { NavigationAndContactButtons } from './navigation-contact-buttons/NavigationAndContactButtons'
 
 // users
