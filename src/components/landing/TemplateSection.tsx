@@ -4,18 +4,18 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
 const templates = [
-  // {
-  //   id: '1',
-  //   image: '/imgs/placeholder.jpg',
-  //   title: 'only-cart',
-  //   category: 'Basic',
-  //   description: 'Template simple y efectivo para tiendas pequeñas.',
-  //   plan: 'Basic',
-  //   url: 'https://only-cart.vercel.app/',
-  //   slug: 'only-cart'
-  // },
   {
     id: '2',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1730740139/mi-tienda-en-linea-shop/only-cart_momzj3.png',
+    title: 'only-cart',
+    category: 'Basic',
+    description: 'Template simple y efectivo para tiendas pequeñas.',
+    plan: 'Basic',
+    url: 'https://only-cart.vercel.app/',
+    slug: 'only-cart'
+  },
+  {
+    id: '1',
     image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727216675/mi-tienda-en-linea-shop/rf98xdgad3zez6yzztap.png',
     title: 'bazar campechano',
     category: 'MVP',
@@ -58,7 +58,7 @@ export function TemplateSection() {
     <section id="templates" className="bg-white text-gray-800 pb-20 pt-24">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Explora Nuestros Templates</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           {
             templates.map((template, index) => (
               <TemplateCard key={index} {...template} />
