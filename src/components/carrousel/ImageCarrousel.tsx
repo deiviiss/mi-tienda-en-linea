@@ -60,22 +60,34 @@ export const ImageCarrousel = ({
           ))}
         </div>
 
-        <div className='absolute inset-0 items-center justify-between px-4 '>
-          <button
-            onClick={prev}
-            className='px-2 py-2 bg-blue-600/50 text-white rounded-none cursor-pointer transition duration-200 ease-out hover:border-blue-600 hover:border hover:bg-blue-700 hover:text-white absolute top-1/2 left-3 transform -translate-y-1/2'
-          >
-            <IoIosArrowBack size={24} />
-          </button>
-          <button
-            onClick={next}
-            className='px-2 py-2 bg-blue-600/50 text-white rounded-none cursor-pointer transition duration-200 ease-out hover:border-black hover:border hover:bg-blue-700 hover:text-white absolute top-1/2 right-3 transform -translate-y-1/2'
-          >
-            <IoIosArrowForward size={24} />
-          </button>
-        </div>
+        {
+          slides.length > 1 && (
+            <div className='absolute inset-0 items-center justify-between px-4 '>
+              <button
+                onClick={prev}
+                className='px-2 py-2 bg-blue-600/50 text-white rounded-none cursor-pointer transition duration-200 ease-out hover:border-blue-600 hover:border hover:bg-blue-700 hover:text-white absolute top-1/2 left-3 transform -translate-y-1/2'
+              >
+                <IoIosArrowBack size={24} />
+              </button>
+              <button
+                onClick={next}
+                className='px-2 py-2 bg-blue-600/50 text-white rounded-none cursor-pointer transition duration-200 ease-out hover:border-black hover:border hover:bg-blue-700 hover:text-white absolute top-1/2 right-3 transform -translate-y-1/2'
+              >
+                <IoIosArrowForward size={24} />
+              </button>
+            </div>
+          )
+        }
 
-        <SlideButtons slides={slides} curr={curr} setCurr={setCurr} />
+        {
+          slides.length > 1 && (
+            <SlideButtons
+              slides={slides}
+              curr={curr}
+              setCurr={setCurr}
+            />
+          )
+        }
       </div>
     </>
   )
