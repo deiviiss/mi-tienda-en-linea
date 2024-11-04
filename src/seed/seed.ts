@@ -28,28 +28,33 @@ interface SeedData {
 export const initialData: SeedData = {
 
   templates: [
-    // {
-    //   id: '1',
-    //   title: 'Only-Cart',
-    //   description: 'Ideal para tiendas pequeñas que buscan un enfoque simple y efectivo. Con un carrito de compras intuitivo y un catálogo de productos fácil de gestionar, este template es perfecto para iniciar ventas en línea rápidamente.',
-    //   features: [
-    //     'Interfaz minimalista enfocada en la funcionalidad',
-    //     'Carrito de compras con actualización rápida de productos',
-    //     'Gestión de hasta 100 productos con opciones básicas de personalización',
-    //     'Notificaciones de pedidos y ventas en tiempo real',
-    //     'Soporte técnico básico por correo electrónico',
-    //     'Panel simple de gestión de pedidos y productos',
-    //     'Acompañamiento inicial para configuración',
-    //     'Sin registro de clientes, ideal para ventas directas'
-    //   ],
-    //   plan: 'Basic',
-    //   category: 'Basic',
-    //   slidesImages: null,
-    //   videoUrl: null,
-    //   url: null
-    // },
     {
       id: '2',
+      title: 'Only-Cart',
+      description: 'Ideal para tiendas pequeñas que buscan un enfoque simple y efectivo. Con un carrito de compras intuitivo y un catálogo de productos fácil de gestionar, este template es perfecto para iniciar ventas en línea rápidamente.',
+      features: [
+        'Interfaz minimalista enfocada en la funcionalidad',
+        'Carrito de compras con actualización rápida de productos',
+        'Gestión de hasta 100 productos con opciones básicas de personalización',
+        'Notificaciones de pedidos mediante WhatsApp',
+        'Soporte técnico básico por correo electrónico',
+        'Panel simple de gestión de productos',
+        'Acompañamiento inicial para configuración',
+        'Sin registro de clientes, ideal para ventas directas'
+      ],
+      plan: 'Basic',
+      category: 'Basic',
+      slidesImages: [
+        {
+          id: '1',
+          url: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1730740139/mi-tienda-en-linea-shop/only-cart_momzj3.png'
+        }
+      ],
+      videoUrl: null,
+      url: 'https://only-cart.vercel.app'
+    },
+    {
+      id: '3',
       title: 'Moda Shop',
       description: 'Un template elegante y sofisticado diseñado para tiendas de moda. Resalta visualmente tus productos y ofrece una experiencia de compra fluida, desde la navegación hasta la pasarela de pago.',
       features: [
@@ -102,7 +107,7 @@ export const initialData: SeedData = {
       url: 'https://moda-shop.vercel.app'
     },
     {
-      id: '3',
+      id: '1',
       title: 'Bazar Campechano',
       description: 'Un template versátil diseñado para tiendas que ofrecen productos variados. Perfecto para bazares y tiendas con categorías extensas, ofreciendo personalización y herramientas avanzadas para gestionar productos de diferentes tipos.',
       features: [
