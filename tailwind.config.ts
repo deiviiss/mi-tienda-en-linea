@@ -95,7 +95,7 @@ const config = {
   },
   plugins: [
     contentQueries,
-    require('tailwindcss-animate')]
+    require('tailwindcss-animated')]
 } satisfies Config
 
 export default config
