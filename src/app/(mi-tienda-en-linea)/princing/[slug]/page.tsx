@@ -20,7 +20,7 @@ export default function PlanBySlugPage({ params }: Props) {
   const pricingPlans = [
     {
       title: 'Plan Básico',
-      price: '$199',
+      price: '$99',
       features: [
         'Carrito de compras',
         'Catálogo de productos',
@@ -36,7 +36,7 @@ export default function PlanBySlugPage({ params }: Props) {
     },
     {
       title: 'Plan Estándar',
-      price: '$399',
+      price: '$299',
       features: [
         'Todas las características del plan básico',
         'Registro de clientes',
@@ -52,7 +52,7 @@ export default function PlanBySlugPage({ params }: Props) {
     },
     {
       title: 'Plan Premium',
-      price: '$599',
+      price: '$499',
       features: [
         'Todas las características estándar',
         'Productos ilimitados',

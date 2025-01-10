@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 const pricingPlans = [
   {
     title: 'Plan Básico',
-    price: '$199',
+    price: '$99',
     features: [
       'Carrito de compras',
       'Catálogo de productos',
@@ -21,7 +21,7 @@ const pricingPlans = [
   },
   {
     title: 'Plan Estándar',
-    price: '$399',
+    price: '$299',
     features: [
       'Todas las características del plan básico',
       'Registro de clientes',
@@ -37,7 +37,7 @@ const pricingPlans = [
   },
   {
     title: 'Plan Premium',
-    price: '$599',
+    price: '$499',
     features: [
       'Todas las características estándar',
       'Productos ilimitados',

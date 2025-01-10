@@ -112,9 +112,9 @@ export const SectionContentTerms = () => {
                     <h2 className="text-2xl font-bold mb-4 text-white">4. Planes y Productos</h2>
                     <p className="text-gray-200">Los planes de suscripción incluyen:</p>
                     <ul className="list-disc pl-6 mt-2 text-gray-200">
-                      <li>Plan Básico ($199/mes): Hasta 100 productos, carrito de compras, mantenimiento de pedidos, y soporte básico.</li>
-                      <li>Plan Estándar ($399/mes): Hasta 500 productos, registro de clientes, pasarelas de pago integradas, y soporte prioritario.</li>
-                      <li>Plan Premium ($599/mes): Productos ilimitados, personalización avanzada, dashboard avanzado, y soporte premium.</li>
+                      <li>Plan Básico ($99/mes): Hasta 100 productos, carrito de compras, mantenimiento de pedidos, y soporte básico.</li>
+                      <li>Plan Estándar ($299/mes): Hasta 500 productos, registro de clientes, pasarelas de pago integradas, y soporte prioritario.</li>
+                      <li>Plan Premium ($499/mes): Productos ilimitados, personalización avanzada, dashboard avanzado, y soporte premium.</li>
                     </ul>
                     <p className="mt-2 text-gray-200">Mi Tienda en Línea no garantiza que el número de productos en los planes superior sea ilimitado, ya que está sujeto a las limitaciones de los servicios externos.</p>
                   </section>
