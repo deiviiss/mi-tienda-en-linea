@@ -1,6 +1,6 @@
 'use client'
 
-import { ShoppingCart } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { IoMenu } from 'react-icons/io5'
@@ -9,6 +9,7 @@ import { titleFont } from '@/config/fonts'
 import { useUiStore } from '@/store'
 
 export const TopMenu = () => {
+  const logo = '/imgs/logoWeb.png'
   const openMenu = useUiStore((state) => state.openSideMenu)
   const [bgColor, setBgColor] = useState('bg-none')
   const fixedScrollThreshold = 0.5 // 1% scroll threshold
@@ -29,11 +30,10 @@ export const TopMenu = () => {
 
   return (
     <div className={`w-full fixed top-0 z-20 text-white ${bgColor} transition-colors duration-300`}>
-      <header className="container mx-auto lg:px-20 px-4 py-5 flex justify-between items-center">
+      <header className="container mx-auto lg:px-20 px-4 py-3  flex justify-between items-center">
         <Link href={'/'}>
           <div className="flex items-center space-x-2">
-            <ShoppingCart className="h-8 w-8 text-blue-400" />
-            <span className="text-xl sm:text-2xl font-bold">Mi Tienda en Línea</span>
+            <Image src={logo} alt="logo" width={421} height={101} className='w-44 sm:w-60' />
           </div>
         </Link>
         <nav>
