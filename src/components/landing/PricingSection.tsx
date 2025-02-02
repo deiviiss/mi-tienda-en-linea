@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 
 const pricingPlans = [
   {
-    title: 'Plan Básico',
+    title: 'Ecommerce Básico',
     price: '$99',
     features: [
       'Carrito de compras',
@@ -20,7 +20,7 @@ const pricingPlans = [
     slug: 'basic'
   },
   {
-    title: 'Plan Estándar',
+    title: 'Ecomerce Estándar',
     price: '$299',
     features: [
       'Todas las características del plan básico',
@@ -36,7 +36,7 @@ const pricingPlans = [
     slug: 'standard'
   },
   {
-    title: 'Plan Premium',
+    title: 'Ecommerce Premium',
     price: '$499',
     features: [
       'Todas las características estándar',
@@ -64,7 +64,7 @@ export function PricingSection() {
   return (
     <section id="pricing" className="bg-gradient-to-b from-gray-800 to-gray-700 pb-20 pt-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Planes de Suscripción</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center">Planes de Suscripción Ecommerce</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {
             pricingPlans.map((plan, index) => (

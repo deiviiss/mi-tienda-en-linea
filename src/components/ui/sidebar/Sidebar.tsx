@@ -41,16 +41,16 @@ export const Sidebar = () => {
 
         {/* menú */}
         <div className='mt-16'>
-          <Link href='/#features'
-            onClick={() => { closeMenu() }}
-            className='flex items-center mt-7 p-2 hover:bg-black hover:text-white rounded-none transition-all'>
-            <span className='ml-3 text-xl'>Características</span>
-          </Link>
-
           <Link href='/#templates'
             onClick={() => { closeMenu() }}
             className='flex items-center mt-7 p-2 hover:bg-black hover:text-white rounded-none transition-all'>
-            <span className='ml-3 text-xl'>Templates</span>
+            <span className='ml-3 text-xl'>Ecommerce</span>
+          </Link>
+
+          <Link href='/#marketing'
+            onClick={() => { closeMenu() }}
+            className='flex items-center mt-7 p-2 hover:bg-black hover:text-white rounded-none transition-all'>
+            <span className='ml-3 text-xl'>Marketing Digital</span>
           </Link>
 
           <Link href='/#pricing'
