@@ -1,4 +1,4 @@
-import { CheckCircle, Headphones, Heart, PenToolIcon, Shield, Users } from 'lucide-react'
+import { BarChart, CheckCircle, Globe, Headphones, Heart, MessageCircle, PenToolIcon, Shield, Users } from 'lucide-react'
 
 const benefits = [
   {
@@ -30,6 +30,21 @@ const benefits = [
     icon: <Heart className="h-12 w-12 text-blue-500" />,
     title: 'Confianza y Trato Personalizado',
     description: 'Queremos que sientas confianza en todo el proceso. Ofrecemos un trato humano y cercano para ayudarte a alcanzar tus metas.'
+  },
+  {
+    icon: <Globe className="h-12 w-12 text-blue-500" />,
+    title: 'Alcance Global',
+    description: 'Con estrategias de marketing digital, tu tienda puede llegar a una audiencia más amplia, ampliando significativamente tu base de clientes potenciales.'
+  },
+  {
+    icon: <MessageCircle className="h-12 w-12 text-blue-500" />,
+    title: 'Interacción Directa con Clientes',
+    description: 'Los canales digitales permiten una comunicación directa y personalizada con tus clientes, fomentando relaciones más sólidas y leales.'
+  },
+  {
+    icon: <BarChart className="h-12 w-12 text-blue-500" />,
+    title: 'Análisis y Optimización en Tiempo Real',
+    description: 'Las herramientas de marketing digital proporcionan datos en tiempo real, permitiéndote ajustar y mejorar tus estrategias de manera continua para maximizar resultados.'
   }
 ]
 

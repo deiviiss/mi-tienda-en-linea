@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { HeaderHero } from '@/components'
 import { BenefitSection, ContactForm, FeatureSection, PricingSection, TemplateSection, ValuePropositionSection } from '@/components/landing'
+import { MarketingPricingSection } from '@/components/landing/MarketingPricingSection'
 import { Button } from '@/components/ui/button'
 
 export default function LandingPage() {
@@ -17,8 +18,11 @@ export default function LandingPage() {
         {/* Templates Section */}
         <TemplateSection />
 
-        {/* Pricing */}
+        {/* Ecommerce Pricing Section */}
         <PricingSection />
+
+        {/* Marketing Pricing Section */}
+        <MarketingPricingSection />
 
         {/* Key Benefits */}
         <BenefitSection />

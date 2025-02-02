@@ -88,6 +88,7 @@ export const SectionContentTerms = () => {
                   <section>
                     <h2 className="text-2xl font-bold mb-4 text-white">1. Descripción del Servicio</h2>
                     <p className="text-gray-200">Mi Tienda en Línea ofrece la creación y mantenimiento de tiendas online personalizadas bajo un esquema de membresía. Cada tienda es desplegada en servidores de Vercel y utiliza Cloudinary para el almacenamiento de imágenes. Los usuarios pueden elegir entre diferentes planes de suscripción con características escalables como el número de productos y funcionalidades adicionales. El dominio personalizado es responsabilidad del usuario, aunque Mi Tienda en Línea ofrece asistencia en el proceso de adquisición.</p>
+                    <p className="text-gray-200 mt-1">Ofrecemos un enfoque integral que no solo cubre la parte técnica de la tienda, sino que también incluye estrategias de marketing digital para impulsar las ventas y la visibilidad de tu negocio en línea.</p>
                   </section>
                 )}
                 {activeSection === 'responsabilidad' && (

@@ -19,7 +19,7 @@ export default function PlanBySlugPage({ params }: Props) {
 
   const pricingPlans = [
     {
-      title: 'Plan Básico',
+      title: 'Ecommerce Básico',
       price: '$99',
       features: [
         'Carrito de compras',
@@ -35,7 +35,7 @@ export default function PlanBySlugPage({ params }: Props) {
       slug: 'basic'
     },
     {
-      title: 'Plan Estándar',
+      title: 'Ecommerce Estándar',
       price: '$299',
       features: [
         'Todas las características del plan básico',
@@ -51,7 +51,7 @@ export default function PlanBySlugPage({ params }: Props) {
       slug: 'standard'
     },
     {
-      title: 'Plan Premium',
+      title: 'Ecommerce Premium',
       price: '$499',
       features: [
         'Todas las características estándar',
@@ -65,6 +65,45 @@ export default function PlanBySlugPage({ params }: Props) {
         'Acompañamiento personalizado'
       ],
       slug: 'premium'
+    },
+    {
+      title: 'Marketing Básico',
+      price: '$149',
+      features: [
+        'Administración de redes sociales: 2-3 publicaciones semanales (promoción directa en publicaciones)',
+        'Creación de copys y diseños simples con Canva y herramientas de AI',
+        'Calendario de publicaciones mensual',
+        'Reporte básico de métricas (interacciones, alcance y crecimiento de seguidores) con explicación personalizada',
+        'Asesoría inicial en gestión de proyectos (uso básico de Trello o Notion)',
+        'Soporte y asesoría directa en marketing digital (enfoque en resultados simples y medibles)'
+      ],
+      slug: 'marketing-basic'
+    },
+    {
+      title: 'Marketing Estándar',
+      price: '$349',
+      features: [
+        'Todas las características del Plan Básico Integral',
+        'Gestión de campañas publicitarias en Facebook Ads (usando el Administrador de Anuncios de Facebook, con configuraciones simples para tráfico frío y retargeting)',
+        'Estrategia de contenido personalizada: 3-4 publicaciones semanales con optimización de copys y segmentación básica',
+        'Informe mensual detallado con métricas clave (incluyendo CTR, interacciones y conversiones) explicado en reuniones directas',
+        'Configuración básica de flujos de trabajo en herramientas como Asana, Trello o Notion',
+        'Definición de objetivos claros (más seguidores, interacciones o contacto vía WhatsApp) y seguimiento personalizado'
+      ],
+      slug: 'marketing-standard'
+    },
+    {
+      title: 'Marketing Premium',
+      price: '$599',
+      features: [
+        'Todas las características del Plan Intermedio Integral',
+        'Producción audiovisual: edición de videos e imágenes (utilizando CapCut y Clipchamp) adaptados a tu marca',
+        'Gestión avanzada de campañas publicitarias: asesoría en segmentación, remarketing y pruebas básicas para optimizar resultados, explicado de forma sencilla',
+        'Consultoría y soporte continuo en marketing digital, con reuniones mensuales para revisar resultados y ajustar estrategias',
+        'Optimización de perfiles y actualización constante de imágenes y portadas en redes sociales',
+        'Capacitación personalizada en marketing digital y en el uso de herramientas de gestión de proyectos, con enfoque práctico y directo'
+      ],
+      slug: 'marketing-premium'
     }
   ]
 
@@ -74,6 +113,8 @@ export default function PlanBySlugPage({ params }: Props) {
       title: plan.title
     }
   })
+
+  const planTitles = ['Básico', 'Estándar', 'Premium']
 
   const features = [
     {
@@ -121,6 +162,16 @@ export default function PlanBySlugPage({ params }: Props) {
         { name: 'Diseño exclusivo', plans: [false, false, true] },
         { name: 'Actualizaciones y mantenimiento continuo', plans: [true, true, true] }
       ]
+    },
+    {
+      category: 'Marketing y Estrategia Digital',
+      items: [
+        { name: 'Administración de redes sociales: 2-3 publicaciones semanales', plans: [true, true, true] },
+        { name: 'Creación de copys y diseños simples con Canva', plans: [true, true, true] },
+        { name: 'Gestión de campañas publicitarias en Facebook Ads', plans: [false, true, true] },
+        { name: 'Producción audiovisual: edición de videos e imágenes', plans: [false, false, true] },
+        { name: 'Consultoría continua en marketing digital', plans: [false, false, true] }
+      ]
     }
   ]
 
@@ -155,7 +206,7 @@ export default function PlanBySlugPage({ params }: Props) {
 
       <div className="py-10 text-white">
         {/* Plans */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8 px-1 sm:px-5 max-w-[1300px] mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 mb-8 p-1 sm:p-5 max-w-[1300px] mx-auto">
           {pricingPlans.map((plan, index) => {
             const { title, price, features, slug } = plan
 
@@ -231,8 +282,10 @@ export default function PlanBySlugPage({ params }: Props) {
                         <thead className="bg-gray-800 sticky top-0">
                           <tr>
                             <th className="p-2 text-left w-1/3"></th>
-                            {pricingPlans.map((plan, index) => (
-                              <th key={index} className="p-2 text-center">{plan.title}</th>
+                            {planTitles.map((title, index) => (
+                              <th key={index} className="p-2 text-center">
+                                {title}
+                              </th>
                             ))}
                           </tr>
                         </thead>
