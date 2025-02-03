@@ -1,4 +1,4 @@
-import { ChartBar, ChartCandlestick, CreditCard, Headphones, PenTool } from 'lucide-react'
+import { Headphones, PenTool } from 'lucide-react'
 import { type ReactNode } from 'react'
 import { BsGlobeCentralSouthAsia } from 'react-icons/bs'
 import { Card, CardContent } from '@/components/ui/card'
@@ -11,34 +11,16 @@ const valueCards = [
     color: 'bg-blue-600'
   },
   {
-    title: 'Soporte Personalizado',
-    icon: <Headphones className="h-16 w-16" />,
-    description: 'Acompañamiento constante para aprovechar al máximo tu plataforma.',
-    color: 'bg-purple-600'
-  },
-  {
-    title: 'Transparencia Total',
-    icon: <CreditCard className="h-16 w-16" />,
-    description: 'Planes con precios fijos mensuales. Sin comisiones ocultas.',
-    color: 'bg-green-600'
-  },
-  {
     title: 'Visibilidad Efectiva',
     icon: <BsGlobeCentralSouthAsia className="h-16 w-16" />,
     description: 'Destaca en tu nicho con campañas digitales focalizadas.',
     color: 'bg-teal-600'
   },
   {
-    title: 'Interacción Directa',
-    icon: <ChartCandlestick className="h-16 w-16" />,
-    description: 'Comunícate directamente con tus clientes de forma personalizada.',
-    color: 'bg-indigo-600'
-  },
-  {
-    title: 'Optimización Continua',
-    icon: <ChartBar className="h-16 w-16" />,
-    description: 'Mejora tus estrategias con análisis en tiempo real.',
-    color: 'bg-cyan-600'
+    title: 'Soporte Personalizado',
+    icon: <Headphones className="h-16 w-16" />,
+    description: 'Acompañamiento constante para aprovechar al máximo tu plataforma.',
+    color: 'bg-purple-600'
   }
 ]
 
