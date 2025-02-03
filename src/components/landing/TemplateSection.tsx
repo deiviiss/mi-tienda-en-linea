@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
 const templates = [
   {
@@ -10,7 +11,7 @@ const templates = [
     title: 'only-cart',
     category: 'Basic',
     description: 'Template simple y efectivo para tiendas pequeñas.',
-    plan: 'Basic',
+    plan: 'Básico',
     url: 'https://only-cart.vercel.app/',
     slug: 'only-cart'
   },
@@ -20,7 +21,7 @@ const templates = [
     title: 'bazar campechano',
     category: 'MVP',
     description: 'Template versátil para tiendas de productos variados',
-    plan: 'estandard',
+    plan: 'Estándar',
     url: 'https://bazarcampechano.com',
     slug: 'bazar-campechano'
   },
@@ -30,17 +31,10 @@ const templates = [
     title: 'moda shop',
     category: 'MVP',
     description: 'Template con diseño elegante para tiendas de moda.',
-    plan: 'estandard',
+    plan: 'Estándar',
     url: 'https://moda-shop.vercel.app/',
     slug: 'moda-shop'
   }
-  // {
-  //   image: '/imgs/placeholder.jpg',
-  //   title: 'custom',
-  //   category: 'custom',
-  //   description: 'Diseña tu propio template personalizado',
-  //   plan: 'custom y premium'
-  // }
 ]
 
 interface TemplateCardProps {
@@ -57,8 +51,28 @@ export function TemplateSection() {
   return (
     <section id="templates" className="bg-white text-gray-800 pb-20 pt-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Explora Nuestros Templates</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+        <h2 className="text-3xl font-bold mb-12 text-center">Explora Nuestros Templates de Ecommerce</h2>
+        <Carousel
+          opts={{
+            align: 'start'
+          }}
+          className="w-full max-w-3xl mx-auto md:hidden"
+        >
+          <CarouselContent className="">
+            {
+              templates.map((template, index) => {
+                return (
+                  <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/3'>
+                    <TemplateCard {...template} />
+                  </CarouselItem>
+                )
+              })
+            }
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           {
             templates.map((template, index) => (
               <TemplateCard key={index} {...template} />

@@ -20,7 +20,7 @@ const pricingPlans = [
     slug: 'basic'
   },
   {
-    title: 'Ecomerce Estándar',
+    title: 'Ecommerce Estándar',
     price: '$299',
     features: [
       'Todas las características del plan básico',

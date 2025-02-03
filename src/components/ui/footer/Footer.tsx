@@ -14,10 +14,10 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/#features"
+                <Link href="/#templates"
                   className="text-gray-400 hover:text-white p-0"
-                >Características</Link></li>
-              <li><Link href="/#templates" className="text-gray-400 hover:text-white">Templates</Link></li>
+                >Ecommerce</Link></li>
+              <li><Link href="/#marketing" className="text-gray-400 hover:text-white">Marketing</Link></li>
               <li><Link href="/#pricing" className="text-gray-400 hover:text-white">Precios</Link></li>
               <li><Link href="/#contact" className="text-gray-400 hover:text-white">Contacto</Link></li>
             </ul>
