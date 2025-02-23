@@ -51,7 +51,8 @@ export function TemplateSection() {
   return (
     <section id="templates" className="bg-white text-gray-800 pb-20 pt-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Explora Nuestros Templates de Ecommerce</h2>
+        <h2 className="text-3xl font-bold mb-1 text-center">Explora Nuestros Templates de Ecommerce</h2>
+        <h3 className='text-xl font-semibold mb-12 text-center text-gray-400'>Ejemplos de tiendas creadas con nuestra plataforma</h3>
         <Carousel
           opts={{
             align: 'start'
