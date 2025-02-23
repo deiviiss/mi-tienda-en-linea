@@ -47,9 +47,8 @@ export const TopMenu = () => {
             <IoMenu size={30} />
           </Button>
           <ul className="hidden space-x-4 md:flex">
-            <li><Link href="/#templates" className="hover:text-blue-400 transition-colors">Ecommerce</Link></li>
-            <li><Link href="/#marketing" className="hover:text-blue-400 transition-colors">Marketing Digital</Link></li>
-            <li><Link href="/#pricing" className="hover:text-blue-400 transition-colors">Precios</Link></li>
+            <li><Link href="/#templates" className="hover:text-blue-400 transition-colors">Templates</Link></li>
+            <li><Link href="/#pricing" className="hover:text-blue-400 transition-colors">Planes</Link></li>
             <li><Link href="/#contact" className="hover:text-blue-400 transition-colors">Contacto</Link></li>
           </ul>
         </nav>

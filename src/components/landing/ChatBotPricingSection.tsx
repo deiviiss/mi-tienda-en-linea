@@ -5,34 +5,43 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 
 const pricingPlans = [
   {
-    title: 'Básico',
-    price: '$2,499',
+    title: 'Chatbot Básico',
+    price: '$499',
     features: [
-      '6 Posts a la semana para mantener tu marca activa',
-      '4 Videos cortos (spot) para generar engagement',
-      'Pauta publicitaria de $500 para impulsar tu alcance',
-      '6 Historias a la semana para conectar directamente con tu audiencia',
-      'Asesoría básica en gestión de contenido',
-      'Reportes simples de rendimiento',
-      'Soporte básico',
-      'Acompañamiento personalizado'
+      'Validación de números de WhatsApp usando la API de Meta',
+      'Automatización de respuestas con información predefinida (horarios, preguntas frecuentes, productos, etc.)',
+      'Flujos de conversación básicos para guiar a los usuarios',
+      'Asesoría en la creación de mensajes automáticos',
+      '2 cambios mensuales en los mensajes del chatbot'
     ],
-    slug: 'basic-marketing'
+    slug: 'basic-chatbot'
   },
   {
-    title: 'Premium',
-    price: '$4,499',
+    title: 'Chatbot Estándar',
+    price: '$799',
     features: [
-      '12 Posts a la semana para mantener tu marca constantemente visible',
-      '8 Videos cortos (spot) con contenido impactante',
-      'Pauta publicitaria de $1000 para maximizar tu alcance',
-      '12 Historias a la semana para interactuar más con tu audiencia',
-      'Estrategia de contenido personalizada',
-      'Análisis avanzado de métricas y conversiones',
-      'Soporte prioritario',
-      'Acompañamiento personalizado'
+      'Todas las características del plan Básico',
+      'Consultas a bases de datos de productos para dar información detallada sobre ellos',
+      'Flujos de conversación más complejos y avanzados para guiar al usuario a través de múltiples opciones',
+      'Integración con Google Calendar para agendar citas',
+      'Integración con Google Sheets para almacenar información de los usuarios',
+      'Asesoría continua en la optimización de flujos',
+      '5 cambios mensuales en los mensajes del chatbot'
     ],
-    slug: 'premium-marketing'
+    slug: 'advanced-chatbot'
+  },
+  {
+    title: 'Chatbot Premium',
+    price: '$1,199',
+    features: [
+      'Todas las características del plan Avanzado',
+      'Integración completa con bases de datos externas para consultas avanzadas',
+      'Automatización de respuestas para múltiples servicios y productos',
+      'Integración avanzada con Google Calendar para gestión de citas',
+      'Mantenimiento continuo y actualizaciones de mensajes según la evolución del negocio',
+      '15 cambios mensuales en los mensajes del chatbot'
+    ],
+    slug: 'premium-chatbot'
   }
 ]
 
@@ -43,11 +52,11 @@ interface PricingCardProps {
   slug: string
 }
 
-export function MarketingPricingSection() {
+export function ChatbotPricingSection() {
   return (
-    <section id="marketing" className="bg-gradient-to-b from-gray-700 to-gray-800 pb-20 pt-24">
+    <section id="marketing" className="bg-gradient-to-b from-gray-800 to-gray-700 pb-20 pt-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Planes de Suscripción Marketing Digital</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center">Planes de Suscripción Chatbot</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {
             pricingPlans.map((plan, index) => (

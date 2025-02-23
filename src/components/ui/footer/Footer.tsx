@@ -16,9 +16,8 @@ export const Footer = () => {
               <li>
                 <Link href="/#templates"
                   className="text-gray-400 hover:text-white p-0"
-                >Ecommerce</Link></li>
-              <li><Link href="/#marketing" className="text-gray-400 hover:text-white">Marketing</Link></li>
-              <li><Link href="/#pricing" className="text-gray-400 hover:text-white">Precios</Link></li>
+                >Template</Link></li>
+              <li><Link href="/#pricing" className="text-gray-400 hover:text-white">Planes</Link></li>
               <li><Link href="/#contact" className="text-gray-400 hover:text-white">Contacto</Link></li>
             </ul>
           </div>

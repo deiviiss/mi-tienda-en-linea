@@ -1,6 +1,7 @@
-import { Headphones, PenTool } from 'lucide-react'
+import { LucideBot, PenTool } from 'lucide-react'
 import { type ReactNode } from 'react'
 import { BsGlobeCentralSouthAsia } from 'react-icons/bs'
+import { FaWhatsapp } from 'react-icons/fa'
 import { Card, CardContent } from '@/components/ui/card'
 
 const valueCards = [
@@ -17,9 +18,14 @@ const valueCards = [
     color: 'bg-teal-600'
   },
   {
-    title: 'Soporte Personalizado',
-    icon: <Headphones className="h-16 w-16" />,
-    description: 'Acompañamiento constante para aprovechar al máximo tu plataforma.',
+    title: 'Chatbots inteligentes',
+    icon: <div className="relative w-16 h-16">
+      {/* Ícono de Bot */}
+      <LucideBot className="absolute inset-0 w-full h-full" />
+      {/* Ícono de WhatsApp en la esquina */}
+      <FaWhatsapp className="absolute bottom-0 right-0 w-6 h-6 text-green-500 bg-white rounded-full border border-gray-300" />
+    </div>,
+    description: 'Convierte 24/7. Atención al cliente automatizada.',
     color: 'bg-purple-600'
   }
 ]
@@ -34,8 +40,8 @@ interface ValueCardProps {
 export function ValuePropositionSection() {
   return (
     <section className="bg-gradient-to-b from-gray-800 to-gray-700 py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center text-white">¿Por qué elegir Mi Tienda en Línea?</h2>
+      <div className="container mx-auto px-4 max-w-[1200px]">
+        <h2 className="text-4xl font-bold mb-12 text-center text-white">Tu negocio, impulsado con soluciones digitales</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {
             valueCards.map((card, index) => (

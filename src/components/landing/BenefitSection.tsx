@@ -1,4 +1,4 @@
-import { CheckCircle, Globe, Headphones, Heart, PenToolIcon, Users } from 'lucide-react'
+import { CheckCircle, Globe, Heart, MessageCircle, PenToolIcon, Users } from 'lucide-react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
 const benefits = [
@@ -23,9 +23,9 @@ const benefits = [
     description: 'Simplicidad en el uso, adaptada a personas que buscan facilidad sin sacrificar la organización de su tienda.'
   },
   {
-    icon: <Headphones className="h-12 w-12 text-blue-500" />,
-    title: 'Atención y Soporte Accesible',
-    description: 'Recibe soporte técnico y asistencia personalizada cuando lo necesites, con un enfoque cercano y amigable.'
+    icon: <MessageCircle className="h-12 w-12 text-blue-500" />,
+    title: 'Automatización con Chatbots',
+    description: 'Ofrece atención al cliente las 24 horas del día, respondiendo automáticamente a las consultas y mejorando la experiencia del usuario.'
   },
   {
     icon: <Heart className="h-12 w-12 text-blue-500" />,
@@ -43,8 +43,8 @@ interface BenefitCardProps {
 export function BenefitSection() {
   return (
     <section className="bg-white text-gray-800 pb-20 pt-24">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Beneficios Clave</h2>
+      <div className="container mx-auto max-w-[1200px] mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-12 text-center">Lo que obtienes con MiTiendaEnLínea</h2>
         <Carousel
           opts={{
             align: 'start'
