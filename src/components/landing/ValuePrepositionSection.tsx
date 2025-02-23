@@ -6,16 +6,16 @@ import { Card, CardContent } from '@/components/ui/card'
 
 const valueCards = [
   {
-    title: 'Control y Personalización',
-    icon: <PenTool className="h-16 w-16" />,
-    description: 'Sin limitaciones de grandes plataformas. Tu tienda, tus reglas.',
-    color: 'bg-blue-600'
-  },
-  {
     title: 'Visibilidad Efectiva',
     icon: <BsGlobeCentralSouthAsia className="h-16 w-16" />,
     description: 'Destaca en tu nicho con campañas digitales focalizadas.',
     color: 'bg-teal-600'
+  },
+  {
+    title: 'Control y Personalización',
+    icon: <PenTool className="h-16 w-16" />,
+    description: 'Tu tienda, tus reglas. Sin limitaciones de grandes plataformas. ',
+    color: 'bg-blue-600'
   },
   {
     title: 'Chatbots inteligentes',

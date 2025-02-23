@@ -44,19 +44,13 @@ export const Sidebar = () => {
           <Link href='/#templates'
             onClick={() => { closeMenu() }}
             className='flex items-center mt-7 p-2 hover:bg-black hover:text-white rounded-none transition-all'>
-            <span className='ml-3 text-xl'>Ecommerce</span>
-          </Link>
-
-          <Link href='/#marketing'
-            onClick={() => { closeMenu() }}
-            className='flex items-center mt-7 p-2 hover:bg-black hover:text-white rounded-none transition-all'>
-            <span className='ml-3 text-xl'>Marketing Digital</span>
+            <span className='ml-3 text-xl'>Templates</span>
           </Link>
 
           <Link href='/#pricing'
             onClick={() => { closeMenu() }}
             className='flex items-center mt-7 p-2 hover:bg-black hover:text-white rounded-none transition-all'>
-            <span className='ml-3 text-xl'>Precios</span>
+            <span className='ml-3 text-xl'>Planes</span>
           </Link>
 
           <Link href='/#contact'

@@ -3,7 +3,7 @@
 import { CheckCircle, XCircle } from 'lucide-react'
 import { useSearchParams } from 'next/navigation'
 import { useState, useRef, useEffect, Suspense } from 'react'
-import { FormContact } from './[slug]/FormContact'
+import { FormContact } from './FormContact'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
