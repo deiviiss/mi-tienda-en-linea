@@ -6,9 +6,9 @@ export const TypeWritter = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'Ecommerces ',
-        1500, // wait 2s before replacing "Ecommerce" with "Marketing Digital"
         'Marketing Digital',
+        1500, // wait 2s before replacing "Marketing Digital" with "Ecommerce"
+        'Ecommerces ',
         1500,
         'Chatbots ',
         1500,
