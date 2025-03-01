@@ -36,7 +36,7 @@ export const ButtonContactWhatsApp = ({ name, className, icon }: Props) => {
           variant='outline'
           className={className}
         >
-          <Link href="https://wa.me/529811250049?text=Hola%2C%20deseo%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20desarrollo%20de%20mi%20ecommerce...
+          <Link href="https://wa.me/529811250049?text=Hola%2C%20deseo%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20 %20
 " passHref target='_blank'>
             {icon && <span className="icon">{icon}</span>}
             {name && <span>{name}</span>}
