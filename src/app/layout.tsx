@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Providers } from '@/components'
 import { textFont } from '@/config/fonts'
@@ -23,7 +25,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <Providers>
-        <body className={textFont.className}>{children}</body>
+        <body className={textFont.className}>
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </body>
       </Providers >
     </html >
   )
