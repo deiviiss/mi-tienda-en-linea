@@ -6,7 +6,7 @@ export const TypeWritter = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'Marketing Digital',
+        'Marketing ',
         1500, // wait 2s before replacing "Marketing Digital" with "Ecommerce"
         'Ecommerces ',
         1500,
@@ -16,7 +16,7 @@ export const TypeWritter = () => {
         1000
       ]}
       wrapper="span"
-      speed={10}
+      speed={30}
       style={{
         fontSize: '24px',
         display: 'inline-block',
