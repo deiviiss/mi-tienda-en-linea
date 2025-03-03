@@ -16,7 +16,7 @@ export const sendEmail = async ({ email, subject, message }: IEmailOptions) => {
   // send mail
   try {
     await resend.emails.send({
-      from: 'Mi Tienda en línea <onboarding@resend.dev>',
+      from: 'Mi Tienda en línea <no-reply@mitiendaenlinea.shop>',
       to: [email],
       subject,
       html: message

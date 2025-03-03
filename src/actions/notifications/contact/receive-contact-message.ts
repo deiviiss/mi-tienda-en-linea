@@ -11,7 +11,7 @@ interface Props {
 
 export const receiveContactMessage = async ({ userEmail, userName, userMessage, userPlan }: Props) => {
   const { emailAdmin } = await getEmailAdmin()
-  console.log('emailAdmin', emailAdmin)
+
   if (!emailAdmin) {
     return {
       ok: false,
