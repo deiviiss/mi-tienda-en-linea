@@ -8,6 +8,7 @@ interface Props {
 }
 
 export const sendContactMessage = async ({ userEmail, userName }: Props) => {
+  console.log('sendContactMessage', userEmail, userName)
   await sendEmail({
     email: userEmail,
     subject: 'Mensaje recibido',
