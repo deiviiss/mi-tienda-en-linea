@@ -1,5 +1,8 @@
+'use client'
+import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
@@ -48,12 +51,16 @@ interface TemplateCardProps {
 }
 
 export function TemplateSection() {
+  const plugin = useRef(
+    Autoplay({ delay: 3000 })
+  )
   return (
     <section id="templates" className="bg-white text-gray-800 pb-20 pt-24">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-1 text-center">Explora Nuestros Templates de Ecommerce</h2>
         <h3 className='text-xl font-semibold mb-12 text-center text-gray-400'>Ejemplos de tiendas creadas con nuestra plataforma</h3>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: 'start'
           }}

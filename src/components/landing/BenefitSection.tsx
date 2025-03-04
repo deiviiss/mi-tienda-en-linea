@@ -1,4 +1,7 @@
+'use client'
+import Autoplay from 'embla-carousel-autoplay'
 import { CheckCircle, Globe, Heart, MessageCircle, PenToolIcon, Users } from 'lucide-react'
+import { useRef } from 'react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
 const benefits = [
@@ -41,11 +44,15 @@ interface BenefitCardProps {
 }
 
 export function BenefitSection() {
+  const plugin = useRef(
+    Autoplay({ delay: 3000 })
+  )
   return (
     <section className="bg-white text-gray-800 pb-20 pt-24">
-      <div className="container mx-auto max-w-[1200px] mx-auto px-4">
+      <div className="container mx-auto max-w-[1200px] px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Lo que obtienes con MiTiendaEnLínea</h2>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: 'start'
           }}
