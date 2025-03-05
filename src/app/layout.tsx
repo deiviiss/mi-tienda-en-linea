@@ -8,11 +8,11 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Mi Tienda en Línea',
-    default: 'Mi Tienda en Línea'
+    template: '%s - Tu Negocio Digital',
+    default: 'Tu Negocio Digital'
   },
   description:
-    'Crea tu tienda en línea con Mi Tienda en Línea. Vende tus productos en internet de forma fácil y segura.',
+    'Impulsa tu negocio con soluciones digitales a medida: e-commerce, marketing, chatbots y gestión de proyectos en un solo lugar.',
   other: {
     'impact-site-verification': '7815ad31-0a0f-41eb-96b5-8a5ab4decb0e'
   }
