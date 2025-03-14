@@ -8,8 +8,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Tu Negocio Digital',
-    default: 'Tu Negocio Digital'
+    template: '%s - Mi Tienda en Línea',
+    default: 'Mi Tienda en Línea'
   },
   description:
     'Impulsa tu negocio con soluciones digitales a medida: e-commerce, marketing, chatbots y gestión de proyectos en un solo lugar.',
