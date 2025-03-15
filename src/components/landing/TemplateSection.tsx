@@ -62,7 +62,7 @@ const templates = [
   },
   {
     title: 'Only-Cart',
-    type: 'Landing Page',
+    type: 'Web Application',
     category: 'E-commerce',
     image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1730740139/mi-tienda-en-linea-shop/only-cart_momzj3.png',
     description: 'Creación de un template simple y efectivo, diseñado para ofrecer una solución accesible para tiendas pequeñas con pocos productos.',
@@ -75,6 +75,22 @@ const templates = [
     scope: 'Diseño a la medida',
     url: 'https://only-cart.vercel.app/',
     date: '2024-03-12'
+  },
+  {
+    title: 'Dream Nails Chatbot',
+    type: 'Chatbot',
+    category: 'Automation',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1742078342/mi-tienda-en-linea-shop/dream-nails-chatbot_q08fvl.png',
+    description: 'Desarrollo de un chatbot para Dream Nails que integra inteligencia artificial para responder preguntas frecuentes y automatizar la gestión de citas.',
+    features: [
+      'Asistente virtual para responder preguntas frecuentes',
+      'Automatización de agendamiento de citas',
+      'Integración con Google Calendar y WhatsApp Business'
+    ],
+    technologies: ['Node.js', 'Make', 'WhatsApp API', 'Google Calendar API'],
+    scope: 'Desarrollo Innovador',
+    url: 'https://api.whatsapp.com/send/?phone=529812099475&text=Hola%2C+me+gustar%C3%ADa+agendar+una+cita...&type=phone_number&app_absent=0',
+    date: '2024-02-28'
   },
   {
     title: 'Casa Quetzal',
@@ -96,7 +112,7 @@ const templates = [
     title: 'Dream Nails Marketing',
     type: 'Marketing Strategy',
     category: 'Marketing',
-    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1741976047/mi-tienda-en-linea-shop/dreamnails_au7khb.png',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1742077688/mi-tienda-en-linea-shop/dream-nails-marketing_dlvo36.png',
     description: 'Gestión de contenido y estrategia de marketing digital para Dream Nails, enfocada en mejorar la presencia en redes sociales y captar más clientes.',
     features: [
       'Creación de copies atractivos para publicaciones',
@@ -107,38 +123,6 @@ const templates = [
     scope: 'Creación exclusiva',
     url: 'https://www.facebook.com/profile.php?id=100095532879449',
     date: '2024-03-01'
-  },
-  {
-    title: 'Moda Shop',
-    type: 'Landing Page',
-    category: 'E-commerce',
-    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1727220023/mi-tienda-en-linea-shop/zsa3mut5xhzggrvf0lvc.png',
-    description: 'Desarrollo de un template con un diseño elegante, especialmente pensado para tiendas de moda que buscan un estilo atractivo y funcional.',
-    features: [
-      'Diseño moderno y atractivo',
-      'Optimizado para tiendas de ropa y accesorios',
-      'Compatible con múltiples dispositivos'
-    ],
-    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
-    scope: 'Diseño a la medida',
-    url: 'https://moda-shop.vercel.app/',
-    date: '2024-03-15'
-  },
-  {
-    title: 'Dream Nails Chatbot',
-    type: 'Chatbot',
-    category: 'Automation',
-    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1741976047/mi-tienda-en-linea-shop/dreamnails_au7khb.png',
-    description: 'Desarrollo de un chatbot para Dream Nails que integra inteligencia artificial para responder preguntas frecuentes y automatizar la gestión de citas.',
-    features: [
-      'Asistente virtual para responder preguntas frecuentes',
-      'Automatización de agendamiento de citas',
-      'Integración con Google Calendar y WhatsApp Business'
-    ],
-    technologies: ['Node.js', 'Make', 'WhatsApp API', 'Google Calendar API'],
-    scope: 'Desarrollo Innovador',
-    url: 'https://api.whatsapp.com/send/?phone=529812099475&text=Hola%2C+me+gustar%C3%ADa+agendar+una+cita...&type=phone_number&app_absent=0',
-    date: '2024-02-28'
   }
 ]
 
