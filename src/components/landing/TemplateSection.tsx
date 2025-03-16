@@ -1,13 +1,15 @@
 'use client'
+import { DialogDescription, DialogTitle } from '@radix-ui/react-dialog'
 import Autoplay from 'embla-carousel-autoplay'
 import { Calendar, ExternalLink, Tag, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { Dialog, DialogClose, DialogContent } from '@/components/ui/dialog'
+import { Dialog, DialogClose, DialogContent, DialogHeader } from '@/components/ui/dialog'
 
 const templates = [
   {
@@ -42,7 +44,7 @@ const templates = [
     ],
     technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
     scope: 'Diseño a la medida',
-    url: 'https://mskellyacademy.com',
+    url: 'https://esl-academic.vercel.app/',
     date: '2024-02-05'
   },
   {
@@ -202,7 +204,7 @@ function TemplateCard({ image, title, description, category, date, scope, techno
           className="w-full h-full object-cover"
           onClick={() => { setSelectedImageUrl(image) }}
         />
-        <ImageModal imageUrl={selectedImageUrl} onClose={() => { setSelectedImageUrl(null) }} />
+        <ImageModal imageUrl={selectedImageUrl} url={url} title={title} onClose={() => { setSelectedImageUrl(null) }} />
       </div>
       <CardHeader className="p-4 pb-0">
         <div className="flex items-start justify-between">
@@ -245,10 +247,10 @@ function TemplateCard({ image, title, description, category, date, scope, techno
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Link href={url} target="_blank" rel="noopener noreferrer" className="w-full">
-          <button className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground py-2 px-4 rounded-md font-medium transition-colors">
+          <Button className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground py-2 px-4 rounded-md font-medium transition-colors">
             Ver demo
             <ExternalLink className="h-4 w-4" />
-          </button>
+          </Button>
         </Link>
       </CardFooter>
     </Card>
@@ -257,10 +259,11 @@ function TemplateCard({ image, title, description, category, date, scope, techno
 
 interface ImageModalProps {
   imageUrl?: string | null
+  url: string
+  title: string
   onClose: () => void
 }
-
-function ImageModal({ imageUrl, onClose }: ImageModalProps) {
+function ImageModal({ imageUrl, onClose, url, title }: ImageModalProps) {
   return (
     <Dialog open={!!imageUrl} onOpenChange={onClose}>
       <DialogContent className="w-full sm:max-w-[100vh] max-h-[90vh] p-0 overflow-hidden bg-primary bg-opacity-65 border-none">
@@ -268,8 +271,26 @@ function ImageModal({ imageUrl, onClose }: ImageModalProps) {
           <X className="h-4 w-4" />
           <span className="sr-only">Cerrar</span>
         </DialogClose>
+
         {imageUrl && (
           <div className="relative w-full h-[90vh]">
+            <DialogHeader className='flex items-center justify-center gap-2 w-full absolute top-16'>
+              <DialogTitle>
+                <h1 className='text-secondary text-2xl'>{title}</h1>
+              </DialogTitle>
+            </DialogHeader>
+
+            <Button
+              asChild
+              variant={'secondary'}
+              className="flex items-center justify-center gap-2 w-full absolute bottom-10 left-1/2"
+            >
+              <Link href={url} target="_blank" className='max-w-56 w-full mx-auto'>
+                Ver demo
+                <ExternalLink className="h-4 w-4" />
+              </Link>
+            </Button>
+
             <Image
               src={imageUrl}
               alt="Imagen en modal"
@@ -278,7 +299,9 @@ function ImageModal({ imageUrl, onClose }: ImageModalProps) {
             />
           </div>
         )}
+
       </DialogContent>
+      <DialogDescription className='hidden'></DialogDescription>
     </Dialog>
   )
 }
