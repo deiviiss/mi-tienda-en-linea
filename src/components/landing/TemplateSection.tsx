@@ -1,11 +1,13 @@
 'use client'
 import Autoplay from 'embla-carousel-autoplay'
-import { Calendar, ExternalLink, Tag } from 'lucide-react'
+import { Calendar, ExternalLink, Tag, X } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { Dialog, DialogClose, DialogContent } from '@/components/ui/dialog'
 
 const templates = [
   {
@@ -189,14 +191,18 @@ function TemplateCard({ image, title, description, category, date, scope, techno
     day: 'numeric'
   })
 
+  const [selectedImageUrl, setSelectedImageUrl] = useState<string | null>(null)
+
   return (
     <Card className="overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg">
       <div className="relative h-48 w-full bg-muted">
         <img
-          src={image || '/placeholder.svg?height=200&width=400'}
+          src={image || '/placeholder.svg'}
           alt={title}
           className="w-full h-full object-cover"
+          onClick={() => { setSelectedImageUrl(image) }}
         />
+        <ImageModal imageUrl={selectedImageUrl} onClose={() => { setSelectedImageUrl(null) }} />
       </div>
       <CardHeader className="p-4 pb-0">
         <div className="flex items-start justify-between">
@@ -246,5 +252,33 @@ function TemplateCard({ image, title, description, category, date, scope, techno
         </Link>
       </CardFooter>
     </Card>
+  )
+}
+
+interface ImageModalProps {
+  imageUrl?: string | null
+  onClose: () => void
+}
+
+function ImageModal({ imageUrl, onClose }: ImageModalProps) {
+  return (
+    <Dialog open={!!imageUrl} onOpenChange={onClose}>
+      <DialogContent className="w-full sm:max-w-[100vh] max-h-[90vh] p-0 overflow-hidden bg-primary bg-opacity-65 border-none">
+        <DialogClose className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-0 hover:bg-primary hover:text-white transition-opacity z-10">
+          <X className="h-4 w-4" />
+          <span className="sr-only">Cerrar</span>
+        </DialogClose>
+        {imageUrl && (
+          <div className="relative w-full h-[90vh]">
+            <Image
+              src={imageUrl}
+              alt="Imagen en modal"
+              fill
+              className="rounded-lg object-contain"
+            />
+          </div>
+        )}
+      </DialogContent>
+    </Dialog>
   )
 }
