@@ -273,30 +273,28 @@ function ImageModal({ imageUrl, onClose, url, title }: ImageModalProps) {
         </DialogClose>
 
         {imageUrl && (
-          <div className="relative w-full h-[70vh]">
-            <DialogHeader className='flex items-center justify-center gap-2 w-full absolute top-16'>
+          <div className="relative w-full h-[70vh] sm:h-[90vh]">
+            <DialogHeader className='flex items-center justify-center gap-2 w-full absolute top-16 sm:top-12'>
               <DialogTitle>
                 <h1 className='text-secondary text-2xl'>{title}</h1>
               </DialogTitle>
             </DialogHeader>
-
-            <Button
-              asChild
-              variant={'secondary'}
-              className="flex items-center justify-center gap-2 w-full absolute bottom-10 right-10"
-            >
-              <a href={url} target="_blank" className='max-w-56 w-full mx-auto' rel="noreferrer">
-                Ver demo
-                <ExternalLink className="h-4 w-4" />
-              </a>
-            </Button>
-
             <Image
               src={imageUrl}
               alt="Imagen en modal"
               fill
               className="rounded-lg object-contain"
             />
+            <Button
+              asChild
+              variant={'secondary'}
+              className="flex items-center justify-center gap-2 w-full absolute bottom-10 right-10 z-10"
+            >
+              <Link href={url} target="_blank" className='max-w-56 w-full mx-auto'>
+                Ver demo
+                <ExternalLink className="h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         )}
 
