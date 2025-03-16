@@ -283,7 +283,7 @@ function ImageModal({ imageUrl, onClose, url, title }: ImageModalProps) {
             <Button
               asChild
               variant={'secondary'}
-              className="flex items-center justify-center gap-2 w-full absolute bottom-10 left-1/2"
+              className="flex items-center justify-center gap-2 w-full absolute bottom-10 right-10"
             >
               <Link href={url} target="_blank" className='max-w-56 w-full mx-auto'>
                 Ver demo
