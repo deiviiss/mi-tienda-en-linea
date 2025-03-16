@@ -273,7 +273,7 @@ function ImageModal({ imageUrl, onClose, url, title }: ImageModalProps) {
         </DialogClose>
 
         {imageUrl && (
-          <div className="relative w-full h-[90vh]">
+          <div className="relative w-full h-[70vh]">
             <DialogHeader className='flex items-center justify-center gap-2 w-full absolute top-16'>
               <DialogTitle>
                 <h1 className='text-secondary text-2xl'>{title}</h1>
@@ -285,10 +285,10 @@ function ImageModal({ imageUrl, onClose, url, title }: ImageModalProps) {
               variant={'secondary'}
               className="flex items-center justify-center gap-2 w-full absolute bottom-10 right-10"
             >
-              <Link href={url} target="_blank" className='max-w-56 w-full mx-auto'>
+              <a href={url} target="_blank" className='max-w-56 w-full mx-auto' rel="noreferrer">
                 Ver demo
                 <ExternalLink className="h-4 w-4" />
-              </Link>
+              </a>
             </Button>
 
             <Image
