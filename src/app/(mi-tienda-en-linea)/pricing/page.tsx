@@ -129,11 +129,11 @@ function Plans() {
       title: 'Chatbot Premium',
       price: '$1,199',
       features: [
-        'Todas las características del plan Avanzado',
+        'Todas las características del plan Estándar',
         'Integración completa con bases de datos externas para consultas avanzadas',
         'Automatización de respuestas para múltiples servicios y productos',
         'Mantenimiento continuo y actualizaciones de mensajes según la evolución del negocio',
-        '15 cambios mensuales en los mensajes del chatbot'
+        'Respuestas con AI'
       ],
       slug: 'chatbot-premium'
     }
