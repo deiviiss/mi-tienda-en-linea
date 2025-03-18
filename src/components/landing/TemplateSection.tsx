@@ -45,7 +45,7 @@ const templates = [
     technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
     scope: 'Diseño a la medida',
     url: 'https://esl-academic.vercel.app/',
-    date: '2024-02-05'
+    date: '2025-28-02'
   },
   {
     title: 'Educational Newsletter',
@@ -62,7 +62,7 @@ const templates = [
     technologies: ['NextJs', 'TypeScript', 'Postgres', 'Tailwind'],
     scope: 'Creación exclusiva',
     url: 'https://educationalnewsletter.vercel.app/',
-    date: '2024-02-15'
+    date: '2024-11-24'
   },
   {
     title: 'Only-Cart',
@@ -78,7 +78,7 @@ const templates = [
     technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
     scope: 'Diseño a la medida',
     url: 'https://only-cart.vercel.app/',
-    date: '2024-03-12'
+    date: '2024-11-04'
   },
   {
     title: 'Dream Nails Chatbot',
@@ -94,7 +94,7 @@ const templates = [
     technologies: ['Node.js', 'Make', 'WhatsApp API', 'Google Calendar API'],
     scope: 'Desarrollo Innovador',
     url: 'https://api.whatsapp.com/send/?phone=529812099475&text=Hola%2C+me+gustar%C3%ADa+agendar+una+cita...&type=phone_number&app_absent=0',
-    date: '2024-02-28'
+    date: '2025-02-06'
   },
   {
     title: 'Casa Quetzal',
@@ -110,7 +110,7 @@ const templates = [
     technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
     scope: 'Solución Personalizada',
     url: 'https://quetzalseeds420.vercel.app/',
-    date: '2025-01-20'
+    date: '2025-02-26'
   },
   {
     title: 'Dream Nails Marketing',
@@ -126,7 +126,7 @@ const templates = [
     technologies: ['Social Media Marketing', 'Copywriting', 'Content Strategy'],
     scope: 'Creación exclusiva',
     url: 'https://www.facebook.com/profile.php?id=100095532879449',
-    date: '2024-03-01'
+    date: '2025-02-12'
   }
 ]
 
