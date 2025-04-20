@@ -32,6 +32,24 @@ const templates = [
     date: '2024-08-09'
   },
   {
+    title: 'Piscina en Casa',
+    type: 'Landing Page',
+    category: 'Servicios',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1745153652/mi-tienda-en-linea-shop/piscinaencasa_nipsve.png',
+    description: 'Landing page para promocionar el servicio de renta de piscina portátil, con detalles técnicos, condiciones del servicio y descarga de contrato. ',
+    features: [
+      'Explicación clara del servicio y su funcionamiento paso a paso',
+      'Sección detallada con especificaciones técnicas y tiempos estimados',
+      'Condiciones completas del servicio accesibles desde la página',
+      'Descarga de contrato y términos legales en PDF',
+      'Formulario de contacto e integración directa con WhatsApp'
+    ],
+    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn', 'Lucide Icons'],
+    scope: 'Diseño a la medida',
+    url: 'https://piscinaencasa.vercel.app/',
+    date: '2025-04-18'
+  },
+  {
     title: 'Ms. Kelly ESL Academy',
     type: 'Landing Page',
     category: 'Educational',
@@ -63,22 +81,6 @@ const templates = [
     scope: 'Creación exclusiva',
     url: 'https://educationalnewsletter.vercel.app/',
     date: '2024-11-25'
-  },
-  {
-    title: 'Only-Cart',
-    type: 'Web Application',
-    category: 'E-commerce',
-    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1730740139/mi-tienda-en-linea-shop/only-cart_momzj3.png',
-    description: 'Creación de un template simple y efectivo, diseñado para ofrecer una solución accesible para tiendas pequeñas con pocos productos.',
-    features: [
-      'Diseño minimalista y funcional',
-      'Ideal para negocios con pocos productos',
-      'Interfaz intuitiva y adaptable a dispositivos móviles'
-    ],
-    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
-    scope: 'Diseño a la medida',
-    url: 'https://only-cart.vercel.app/',
-    date: '2024-11-05'
   },
   {
     title: 'Dream Nails Chatbot',
