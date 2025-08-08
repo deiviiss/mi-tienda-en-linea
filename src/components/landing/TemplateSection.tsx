@@ -28,7 +28,7 @@ const templates = [
     ],
     technologies: ['NextJs', 'TypeScript', 'NestJs', 'Docker', 'Postgres', 'Prisma', 'Tailwind', 'Cloudinary'],
     scope: 'Solución Personalizada',
-    url: 'https://bazarcampechano.com',
+    url: 'https://bazarcampechano.vercel.app',
     date: '2024-08-09'
   },
   {

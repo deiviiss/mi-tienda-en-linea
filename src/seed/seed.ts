@@ -157,7 +157,7 @@ export const initialData: SeedData = {
         }
       ],
       videoUrl: null,
-      url: 'https://bazarcampechano.com'
+      url: 'https://bazarcampechano.vercel.app'
     }
 
   ],
