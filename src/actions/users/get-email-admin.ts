@@ -1,17 +1,8 @@
 'use server'
 
-import prisma from '@/lib/prisma'
-
 export const getEmailAdmin = async () => {
   try {
-    const emailAdmin = await prisma.user.findFirst({
-      where: {
-        role: 'admin'
-      },
-      select: {
-        email: true
-      }
-    })
+    const emailAdmin = 'mitiendaenlinea.shop@hotmail.com'
 
     if (!emailAdmin) {
       return { ok: false, message: 'No se pudo recuperar el email', emailAdmin: null }

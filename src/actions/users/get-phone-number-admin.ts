@@ -1,17 +1,8 @@
 'use server'
 
-import prisma from '@/lib/prisma'
-
 export const getPhoneNumberAdmin = async () => {
   try {
-    const phoneNumberAdmin = await prisma.user.findFirst({
-      where: {
-        role: 'admin'
-      },
-      select: {
-        phoneNumber: true
-      }
-    })
+    const phoneNumberAdmin = '9811250049'
 
     if (!phoneNumberAdmin) {
       return { ok: false, message: 'No se pudo recuperar el número', phoneNumberAdmin: null }

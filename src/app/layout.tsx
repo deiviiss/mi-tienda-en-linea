@@ -2,7 +2,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
-import { Providers } from '@/components'
 import { textFont } from '@/config/fonts'
 import './globals.css'
 
@@ -25,14 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <Providers>
-        <body className={textFont.className}>
-          {children}
-          <Analytics />
-          <SpeedInsights />
-          <GoogleAnalytics gaId="G-M5E9J1WMNP" />
-        </body>
-      </Providers >
+      <body className={textFont.className}>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+        <GoogleAnalytics gaId="G-M5E9J1WMNP" />
+      </body>
     </html >
   )
 }

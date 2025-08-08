@@ -20,7 +20,7 @@ export const receiveContactMessage = async ({ userEmail, userName, userMessage, 
   }
 
   await sendEmail({
-    email: emailAdmin.email,
+    email: emailAdmin,
     subject: `Mensaje de contacto - ${userName}.`,
     message: `
     <div style="font-family: Arial, sans-serif; background-color: #1a1a1a; color: #f0f0f0; padding: 20px; border-radius: 8px;">
