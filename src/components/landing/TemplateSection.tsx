@@ -13,6 +13,57 @@ import { Dialog, DialogClose, DialogContent, DialogHeader } from '@/components/u
 
 const templates = [
   {
+    id: 10,
+    title: 'Burger-Dev',
+    type: 'Web Application',
+    category: 'Menu Digital',
+    description: 'Menú digital para restaurante con catálogo de productos, carrito de compra y pedidos automatizados por WhatsApp.',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1777093852/mi-tienda-en-linea-shop/menu_digital_s0slyn.png',
+    features: [
+      'Menú digital responsive optimizado para móviles',
+      'Carrito de compras con personalización de productos',
+      'Generación automática de pedidos por WhatsApp',
+      'Estructura escalable para categorías y productos',
+      'Carga rápida con imágenes optimizadas'
+    ],
+    technologies: ['Next.js', 'Prisma', 'Tailwind', 'WhatsApp'],
+    scope: 'Creación exclusiva',
+    url: 'https://burgerdev-demo.vercel.app',
+    date: '2025-12-02'
+  },
+  {
+    title: 'Ms. Kelly ESL Academy',
+    type: 'Landing Page',
+    category: 'Educational',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1777093852/mi-tienda-en-linea-shop/esl_academic_mxpsup.png',
+    description: 'Desarrollo de una página web para la academia Ms. Kelly ESL Academy, donde se proporcionan recursos y contenido educativo para estudiantes de inglés.',
+    features: [
+      'Información sobre clases y metodología de enseñanza',
+      'Recursos educativos gratuitos para estudiantes',
+      'Interfaz intuitiva y adaptable a dispositivos móviles'
+    ],
+    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
+    scope: 'Diseño a la medida',
+    url: 'https://misskellyeslacademy.com',
+    date: '2025-02-28'
+  },
+  {
+    title: 'Casa Quetzal',
+    type: 'Landing Page',
+    category: 'E-commerce',
+    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1777093852/mi-tienda-en-linea-shop/quetzal_seeds_suwilk.png',
+    description: 'Desarrollo de una landing page para Casa Quetzal Cannabis Seeds, enfocada en presentar la marca y sus valores de sustentabilidad, innovación genética y trazabilidad.',
+    features: [
+      'Presentación de la marca y sus valores',
+      'Información sobre productos y genética avanzada',
+      'Diseño moderno y adaptable a dispositivos móviles'
+    ],
+    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
+    scope: 'Solución Personalizada',
+    url: 'https://quetzalseeds420.com',
+    date: '2025-02-27'
+  },
+  {
     title: 'Bazar Campechano',
     type: 'Web Application',
     category: 'E-commerce',
@@ -50,22 +101,6 @@ const templates = [
     date: '2025-04-18'
   },
   {
-    title: 'Ms. Kelly ESL Academy',
-    type: 'Landing Page',
-    category: 'Educational',
-    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1741975673/mi-tienda-en-linea-shop/esl-academic_npjptl.png',
-    description: 'Desarrollo de una página web para la academia Ms. Kelly ESL Academy, donde se proporcionan recursos y contenido educativo para estudiantes de inglés.',
-    features: [
-      'Información sobre clases y metodología de enseñanza',
-      'Recursos educativos gratuitos para estudiantes',
-      'Interfaz intuitiva y adaptable a dispositivos móviles'
-    ],
-    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
-    scope: 'Diseño a la medida',
-    url: 'https://esl-academic.vercel.app/',
-    date: '2025-02-28'
-  },
-  {
     title: 'Educational Newsletter',
     type: 'Web Application',
     category: 'Educational',
@@ -97,22 +132,6 @@ const templates = [
     scope: 'Desarrollo Innovador',
     url: 'https://api.whatsapp.com/send/?phone=529812099475&text=Hola%2C+me+gustar%C3%ADa+agendar+una+cita...&type=phone_number&app_absent=0',
     date: '2025-02-07'
-  },
-  {
-    title: 'Casa Quetzal',
-    type: 'Landing Page',
-    category: 'E-commerce',
-    image: 'https://res.cloudinary.com/cloudinary-api-images/image/upload/v1741975672/mi-tienda-en-linea-shop/quetzal-seed_kvisnr.png',
-    description: 'Desarrollo de una landing page para Casa Quetzal Cannabis Seeds, enfocada en presentar la marca y sus valores de sustentabilidad, innovación genética y trazabilidad.',
-    features: [
-      'Presentación de la marca y sus valores',
-      'Información sobre productos y genética avanzada',
-      'Diseño moderno y adaptable a dispositivos móviles'
-    ],
-    technologies: ['NextJs', 'TypeScript', 'Tailwind', 'Shadcn'],
-    scope: 'Solución Personalizada',
-    url: 'https://quetzalseeds420.vercel.app/',
-    date: '2025-02-27'
   },
   {
     title: 'Dream Nails Marketing',
